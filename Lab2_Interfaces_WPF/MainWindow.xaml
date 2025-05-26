@@ -6,29 +6,12 @@
         xmlns:local="clr-namespace:Lab2_Interfaces_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="500">
-    <StackPanel VerticalAlignment="Center">
-        <WrapPanel HorizontalAlignment="Center">
-            <Label>Label</Label>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-        </WrapPanel>
-        <WrapPanel HorizontalAlignment="Center">
-            <Label>Label</Label>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-            <TextBox Height="25">TextBox</TextBox>
-        </WrapPanel>
-        <Button Content="Button" Width="40" Margin="20"></Button>
-    </StackPanel>
+    <DockPanel>
+        <Label DockPanel.Dock="Top" HorizontalAlignment="Center">Label</Label>
+        <TextBox VerticalAlignment="Stretch" Width="190" DockPanel.Dock="Left">TextBox</TextBox>
+        <StackPanel VerticalAlignment="Bottom" Margin="10,20">
+            <Button Content="Button" Width="70"></Button>
+        </StackPanel>
+        <TextBox VerticalAlignment="Stretch" Width="200" DockPanel.Dock="Right">TextBox</TextBox>
+    </DockPanel>
 </Window>
