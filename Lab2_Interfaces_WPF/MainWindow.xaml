@@ -6,12 +6,9 @@
         xmlns:local="clr-namespace:Lab2_Interfaces_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="500">
-    <DockPanel>
-        <Label DockPanel.Dock="Top" HorizontalAlignment="Center">Label</Label>
-        <TextBox VerticalAlignment="Stretch" Width="190" DockPanel.Dock="Left">TextBox</TextBox>
-        <StackPanel VerticalAlignment="Bottom" Margin="10,20">
-            <Button Content="Button" Width="70"></Button>
-        </StackPanel>
-        <TextBox VerticalAlignment="Stretch" Width="200" DockPanel.Dock="Right">TextBox</TextBox>
-    </DockPanel>
+    <Canvas>
+        <Label Canvas.Left="20" Canvas.Top="20">Label</Label>
+        <TextBox Canvas.Left="40" Canvas.Top="40">TextBox</TextBox>
+        <Button Canvas.Left="60" Canvas.Top="60" Content="Button"></Button>
+    </Canvas>
 </Window>
